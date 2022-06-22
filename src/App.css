@@ -1,38 +1,109 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('./images/background.png');
+  font-family: Roboto, sans-serif;
+  color: #fff;
+}
+
+header {
+  padding: 12px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.solar-system {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.planets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.planet-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.planet-card p {
+  cursor: default;
+}
+
+.planet-card img {
+  transition: .3s;
+  width: 160px;
+}
+
+.planet-card img:hover {
+  filter: brightness(130%);
+  transition: .3s;
+}
+
+.missions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 24px;
+}
+
+.missions {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.mission-card {
+  text-align: center;
+  border: 1px solid #2c365e;
+  background-color: #2c365e4b;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  width: 20%;
+  line-height: 22px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mission-title {
+  background-color: #2c365e;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+
+.mission-informations {
+  padding: 8px;
+}
+
+@media screen and (max-width : 600px ) {
+
+  .planets {
+    gap: 12px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .planet-card img {
+    width: 120px;
+  }
+
+  .mission-card {
+    width: 130px;
+  }
+
+  .mission-title p {
+    padding: 4px;
   }
 }
