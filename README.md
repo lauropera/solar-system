@@ -1,6 +1,6 @@
 # :artificial_satellite: Solar System
 
-<!-- ![Preview Projeto](./github/Readme-gif.gif) -->
+![Preview Projeto](./github/Readme-gif.gif)
 
 ## Acesse meu projeto <a href="https://lauropera.github.io/solar-system/">AQUI</a>
 
