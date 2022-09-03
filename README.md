@@ -19,6 +19,8 @@ Nesse projeto desenvolvemos nosso conhecimento prévio em React. Colocamos em pr
 * JavaScript
 * React
 
+<br />
+
 ## 📚 Documentação
 
   <details>
